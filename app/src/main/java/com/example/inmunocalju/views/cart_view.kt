@@ -14,7 +14,6 @@ fun cart_view() {
         modifier = Modifier.fillMaxSize(),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.Center
-    ) {
-        Text(text = "Cart View")
-    }
+    )
+    { Text(text = "Cart View") }
 }

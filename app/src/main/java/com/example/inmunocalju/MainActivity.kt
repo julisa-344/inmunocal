@@ -47,6 +47,10 @@ import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
 import com.example.inmunocalju.ui.theme.InmunocaljuTheme
 import com.example.inmunocalju.views.Categoria
+import com.example.inmunocalju.views.Payment1
+import com.example.inmunocalju.views.Payment2
+import com.example.inmunocalju.views.Payment3
+import com.example.inmunocalju.views.Payment4
 import com.example.inmunocalju.views.Producto
 import com.example.inmunocalju.views.UserProfile
 import com.example.inmunocalju.views.cart_view
@@ -137,10 +141,10 @@ fun MyAppContent(
                     suscripcion_view(navController)
                 }
                 composable(MyRoute.CART) {
-                    cart_view()
+                    Payment1(navController)
                 }
                 composable(MyRoute.PROFILE) {
-                    profile_view()
+                    Payment2(navController)
                 }
 
                 composable("detail_sub") { detail_sub_view(navController) }
@@ -183,6 +187,10 @@ fun MyAppContent(
                     )
                 }
 
+                composable("payment1") { Payment1(navController) }
+                composable("payment2") { Payment2(navController) }
+                composable("payment3") { Payment3(navController) }
+                composable("payment4") { Payment4(navController) }
 
             }
             BottomNavigation(
