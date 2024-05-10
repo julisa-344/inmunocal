@@ -96,7 +96,7 @@ fun actual_sub_view(navController: NavHostController){
             )
             Spacer(modifier = Modifier.size(30.dp))
             Button(
-                onClick = { },
+                onClick = { navController.navigate("products")},
                 colors = ButtonDefaults.buttonColors(containerColor = colorResource(R.color.primary_600)),
                 shape = RoundedCornerShape(10.dp),
                 modifier = Modifier
