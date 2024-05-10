@@ -125,7 +125,7 @@ fun suscripcion_view(navController: NavController){
             .fillMaxSize()
             .padding(16.dp),
             horizontalAlignment = Alignment.CenterHorizontally){
-            Spacer(modifier = Modifier.size(20.dp))
+            Spacer(modifier = Modifier.size(10.dp))
             Row(modifier = Modifier
                 .fillMaxWidth()
             ) {
@@ -145,7 +145,7 @@ fun suscripcion_view(navController: NavController){
                 )
 
             }
-            Spacer(modifier = Modifier.size(100.dp))
+            Spacer(modifier = Modifier.size(75.dp))
             Row (modifier = Modifier
                 .fillMaxWidth(),
                 horizontalArrangement = Arrangement.Center,
@@ -157,7 +157,7 @@ fun suscripcion_view(navController: NavController){
             Image(
                 painter = painterResource(id = R.drawable.pack),
                 contentDescription = null,
-                modifier = Modifier.size(230.dp)
+                modifier = Modifier.size(150.dp)
             )
 
             Text(
